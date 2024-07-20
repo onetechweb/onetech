@@ -1,0 +1,550 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+/* ---------- HOME --------- */
+.home{
+    background-image: url(./img/index.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+.home-content a {
+    background-color: #00276c;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    padding: .25rem;
+    margin-top: 32px;
+    margin-right: auto;
+}
+.home-content p {
+    color: #00276c;
+    font-weight: 700;
+    font-size: 14px;
+    padding: .25rem;
+    margin-top: 20px;
+}
+.home-content p span {
+    padding: 3px;
+    background-color: lawngreen;
+    border-radius: .25rem;
+}
+.home-content h1 {
+    font-size: 34px;
+    font-weight: 800;
+    margin-bottom: 32px;
+    margin-top: 32px;
+    color: white;
+}
+.home-content h2 {
+    color: #00276c;
+    line-height: 50px;
+    font-weight: 700;
+    font-size: 32px;
+    text-align: left;
+}
+.btn{
+    text-align: center;
+	background-color: #00276c;
+	border-radius:1px;
+	display:inline-block;
+	cursor:pointer;
+	color:white;
+	font-size:1rem;
+	padding:15px 35px;
+	text-decoration:none;
+    margin-top: 100px;
+} 
+.btn:hover{
+    background-color: white; 
+    color: #00276c;
+    border: 1px solid #00276c;
+}
+
+/* ---------- CONTENEDOR --------- */
+.contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.txt-1 {
+    flex: 1;
+    width: 100%;
+    max-width: none;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+    line-height: 36px;
+    font-weight: 800;
+    font-size: 30px;
+    color: #00276c;
+}
+.txt-2 {
+    flex: 1;
+    width: 100%;
+    max-width: none;
+    margin-bottom: 20px;
+    padding: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    font-size: 1.3rem;
+    font-family: Mulish, system-ui, sans-serif;
+}
+@media screen and (max-width: 768px) {
+    .txt-1, .txt-2 {
+        max-width: 100%;
+    }
+}
+
+.container-box{
+    padding: 15px 9%;
+    padding-bottom: 20px;
+    background-color: #ecf3ff;
+    border: 3px solid #00276c;
+    border-radius: 5px;
+}
+.container-box .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 15px;
+}
+.container-box .box-container .box{
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 30px 20px;
+}
+.container-box .box-container .box a{
+    color: #00276c;
+}
+
+/* ---------- CERTIFICADO --------- */
+.certificado {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+.certificado-content {
+    flex: 1;
+    padding: 20px;
+    max-width: 51%;
+}
+.certificado-content h2 {
+    color: #00276c;
+    font-size: 2.8rem;
+}
+.certificado-content p {
+    padding-top: 30px;
+    font-size: 1.7rem;
+}
+.certificado-img {
+    margin-left: 20px;
+    text-align: center;
+}
+.certificado-img img {
+    width: 350px;
+    height: auto;
+}
+.certificado-img div {
+    margin-top: 10px;
+}
+.certificado-img div a {
+    color: #00276c;
+    display: inline-block;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .certificado {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .certificado-content {
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .certificado-img {
+        margin-top: 20px;
+    }
+
+    .certificado-img img {
+        width: 250px;
+    }
+}
+
+/* ---------- INFO CURSO --------- */
+.informacion{
+    padding: 10px 10px;
+}
+.info-curso {
+    text-align: center;
+    color: #00276c;
+    font-size: 3rem;
+}
+.info-wrapper {
+    padding: 35px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.info-card {
+    flex: 1;
+    min-width: 300px;
+    max-width: 450px;
+    margin: 20px;
+    background: #ecf3ff;
+    border: 2px solid #00276c;
+    text-align: left;
+}
+.card-text {
+    padding: 30px 12px;
+    line-height: 22px;
+}
+.card-text ul {
+    padding-left: 20px;
+    font-size: 1.3rem;
+    line-height: 40px;
+    font-weight: 200;
+}
+.button-container {
+    text-align: center;
+}
+.button-container button {
+    margin: 0 10px; 
+    padding: 20px 30px;
+    background-color: #00276c;
+    color: white;
+    border-radius: 1px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.button-container button:hover {
+    background-color: white; 
+    color: #00276c;
+    border: 1px solid #00276c;
+}
+
+@media screen and (max-width: 768px) {
+    .button-container button {
+        padding: 15px 25px;
+        font-size: 0.9rem; 
+        margin: 5px;
+    }
+}
+
+
+/* ---------- CONTENT --------- */
+.contenido{
+    padding: 20px 40px;
+}
+.content{
+    align-items: center;
+    display: flex;
+}
+.text{
+    padding: 80px;
+}
+.text h2{
+    line-height: 36px;
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: #00276c;
+}
+.text p{
+    line-height: 30px;
+    font-weight: 500;
+    font-size: 28px;
+    margin-top: 1rem;
+}
+.text ul{
+    padding: 20px;
+}
+.text ul li{
+    font-size: 20px;
+    margin-top: .55rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text {
+        padding: 40px;
+    }
+
+    .text h2 {
+        font-size: 2rem;
+        line-height: 30px;
+    }
+
+    .text p {
+        font-size: 1.5rem;
+        line-height: 25px;
+    }
+
+    .text ul {
+        padding: 10px;
+    }
+
+    .text ul li {
+        font-size: 1rem;
+    }
+}
+
+/* ---------- PRICE --------- */
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.price-container {
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 2px solid #00276c;
+    padding: 40px;
+}
+.title {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #00276c;
+    margin-bottom: 20px;
+}
+.prices {
+    font-size: 2rem;
+}
+.details {
+    margin-top: 20px;
+}
+.details p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+.details li{
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+.discount {
+    margin-top: 15px;
+    color: #00276c;
+    font-weight: bold;
+}
+.payment-methods {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+.payment-info button {
+    background-color: #00276c;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    margin: 25px 15px;
+    padding: 15px 35px;
+    cursor: pointer;
+}
+.payment-info button:hover {
+    background-color: white;
+    border: 2px solid #00276c;
+    color: #00276c;
+}
+.payment-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+.payment-icons img {
+    width: 50px;
+    height: 50px;
+}
+
+/* ---------- MAIN-FECH ---------- */
+.main-fech .fechas{
+    display: flex;
+    width: 100%;
+}
+.main-top {
+    text-align:left;
+    padding-bottom: 30px;
+    color: #00276c;
+    font-size: 3rem;
+}
+.fechas .card{
+    width: 20%;
+    margin: 15px;
+    border-radius: 5px;
+    border: 2px solid #00276c;
+}
+.fechas .card h4{
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.fechas .card p{
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+.fechas table{
+    margin: auto;
+}
+.fechas .per span{
+    text-align: center;
+    font-size: 30px;
+    padding: 5px;
+    color: #00276c;
+}
+.fechas td{
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+.fechas .card button{
+    width: 100%;
+    margin-top: 15px;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 2px;
+    background: #00276c;
+    color: white;
+    border: 1px solid #00276c;
+}
+.fechas .card button:hover{
+    background: white;
+    color: #00276c;
+    transition: 0.5s;
+}
+
+
+@media screen and (max-width: 768px) {
+    .main-fech .fechas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fechas .card {
+        width: 80%;
+    }
+
+    .main-top {
+        font-size: 2rem;
+        padding-bottom: 15px;
+    }
+
+    .fechas .card h4,
+    .fechas .card p {
+        text-align: center;
+    }
+
+    .fechas .per span {
+        font-size: 24px;
+    }
+
+    .fechas td {
+        font-size: 12px;
+    }
+}
+
+/* ---------- CONSULTAS ---------- */
+.consultas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-left: 25%;
+    padding-right: 25%;
+    margin-top: 50px;
+}
+.consultas-text h4{
+    padding-bottom: 30px;
+    color: #00276c;
+    font-size: 2.3rem;
+}
+.consultas-text p{
+    font-size: 1.3rem;
+}
+.consultas-btn {
+    padding: 15px 25px;
+    background-color: #00276c;
+    color: white;
+    border-radius: 1px;
+    cursor: pointer;
+    font-size: 1rem;
+
+
+    margin-top: 20px
+}
+.consultas-btn:hover {
+    background-color: white; 
+    color: #00276c;
+    border: 1px solid #00276c;
+}
+
+/* ---------- PREGUNTAS --------- */
+.preguntas{
+    min-height: 100vh;
+    width: 88%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title-preguntas{
+    color: #00276c;
+    font-size: 3rem;
+}
+.faq{
+    max-width: 700px;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #00276c;
+    cursor: pointer;
+}
+.questions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.questions h3{
+    font-size: 1.5rem;
+}
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+}
+.answer p{
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 1.2rem;
+}
+.faq.active .answer{
+    max-height: 300px;
+}
+.faq.active svg{
+    transform: rotate(180deg);
+}
+svg{
+    transition: transform 0.5s ease-in;
+}
+
